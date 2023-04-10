@@ -79,6 +79,13 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  text-align: center;
+
+  #converter {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 
   input {
     font-size: larger;
@@ -87,6 +94,7 @@ form {
     text-align: center;
     border: none;
     border-bottom: dotted 1px $faded;
+    max-width: 15vmax;
   }
 }
 
