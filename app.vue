@@ -3,7 +3,7 @@
     <form>
       <div id="converter"> <label for="converter-px"><input id="converter-px" type="number" v-model="inputPx"
             @input="updater('inputPx')">px </label>
-        <span> = </span>
+        <span class="equal"> = </span>
         <label for="converter-rem"><input id="converter-rem" type="number" v-model="inputRem"
             @input="updater('inputRem')">rem</label>
       </div>
@@ -45,11 +45,11 @@ export default {
 
       table.innerHTML = "";
 
-      for (let i = 8; i < 33; i++) {
+      for (let i = 4; i < 33; i = i + 2) {
         let rem = (i / this.rootElementSize);
         let row =
           `<tr>
-            <td>${i}px</td><td>=</td>
+            <td>${i}px</td><td class="equal">=</td>
             <td>${rem}rem</td>
         </tr>`;
         tablebody.insertAdjacentHTML("beforeend", row);
@@ -65,11 +65,12 @@ export default {
 <style lang="scss">
 $dark: #1f1f1f;
 $light: #f7f9f9;
+$faded: #f7f7f73f;
 
 body {
   background-color: $dark;
   color: $light;
-  font-size: larger;
+  font-size: 1.5rem;
 }
 
 form {
@@ -85,11 +86,22 @@ form {
     color: $light;
     text-align: center;
     border: none;
-    border-bottom: dotted 1px $light;
+    border-bottom: dotted 1px $faded;
   }
 }
 
 table {
   margin: 4rem auto;
+
+  tbody {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+}
+
+.equal {
+  padding: 0 0.3rem;
+  color: $faded;
 }
 </style>
