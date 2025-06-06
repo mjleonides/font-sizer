@@ -1,42 +1,28 @@
-# Nuxt 3 Minimal Starter
+# [Font Sizer](https://leonides.dev/font-sizer)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Simple tool for calculating CSS font size units.
 
-## Setup
+## About
 
-Make sure to install the dependencies:
+As a web developer, I frequently found myself wrestling with the conversion between pixels and rems when setting font sizes in CSS.
 
-```bash
-# yarn
-yarn install
+Calculating these conversions manually – especially when dealing with multiple font sizes – is a tedious and error-prone process.
 
-# npm
-npm install
+This tool provides a quick and accurate way to convert pixel values into rems, allowing you to maintain a consistent and scalable typography system.
 
-# pnpm
-pnpm install
-```
+Ultimately, it’s about reducing friction and making your CSS workflow more efficient.
 
-## Development Server
+### Features
 
-Start the development server on `http://localhost:3000`
+- 🧮 Calculate font size in px from rem, vice versa
+- 📋 Quick reference table of common font sizes
 
-```bash
-npm run dev
-```
+## Technical Details
 
-## Production
+Static site built with [Nuxt](https://nuxt.com/), [Vue](https://www.vuejs.org), [TypeScript](https://www.typescriptlang.org/), and [Vite](https://vite.dev/). CI/CD pipeline using [Github Actions](https://github.com/features/actions), deployed to [Github Pages](https://pages.github.com/).
 
-Build the application for production:
+## Contact
 
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **Author:** Mike Leonides
+- **Email:** contact@leonides.dev
+- **Website:** [leonides.dev](https://leonides.dev)
