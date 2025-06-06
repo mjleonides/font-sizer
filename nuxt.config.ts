@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	app: {
-		baseURL: "/font-sizer/",
-	},
+				modules: ["@vite-pwa/nuxt"],
+				app: {
+								baseURL: "/font-sizer/"
+				}
 });
