@@ -1,4 +1,5 @@
 <template>
+	<VitePwaManifest />
 	<div class="layout">
 		<form>
 			<div id="converter">
