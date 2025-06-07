@@ -14,6 +14,16 @@ export default defineNuxtConfig({
 		}
 	},
 	pwa: {
-		registerType: "autoUpdate"
+		registerType: "autoUpdate",
+		manifest: {
+			name: "Font Sizer",
+			short_name: "Font Sizer",
+			start_url: "/font-sizer/",
+			display: "standalone",
+			background_color: "#ffffff",
+			theme_color: "#42b883",
+			lang: "en",
+			scope: "/font-sizer/"
+		}
 	}
 });
